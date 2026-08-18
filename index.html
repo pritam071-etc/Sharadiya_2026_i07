@@ -18,9 +18,56 @@
 #adminView{display:none;min-height:100vh;background:#f5eee0;padding-top:82px}.admin-shell{width:min(1200px,94%);margin:auto;padding:30px 0 70px}.admin-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{background:#fff;border-radius:20px;padding:20px;border:1px solid #ead9b6;box-shadow:0 8px 24px rgba(73,9,18,.08)}.stat b{display:block;font-size:2rem;color:var(--wine)}.greeting-card{background:linear-gradient(135deg,#5d0d18,#8f1826);color:var(--cream);border:1px solid var(--gold);border-radius:28px;padding:32px;margin:0 0 25px;box-shadow:0 18px 50px rgba(73,9,18,.2)}.greeting-mark{text-align:center;color:var(--lgold)}.greeting-title{text-align:center;font:1.65rem "Tiro Bangla";margin:4px 0 14px}.greeting-divider{width:90px;height:1px;background:var(--lgold);margin:0 auto 20px}.greeting-text{text-align:center;max-width:850px;margin:auto;font-family:"Tiro Bangla";font-size:1.04rem}.greeting-sign{display:block;margin-top:16px;color:var(--lgold);font-size:1.2rem}.admin-card{background:#fff;border-radius:22px;padding:22px;margin-top:20px;border:1px solid #ead9b6;overflow:hidden}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:15px}.toolbar input,.toolbar select{padding:10px 12px;border:1px solid #ddcda9;border-radius:12px;background:#fffdf8}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:900px}th,td{text-align:left;padding:12px;border-bottom:1px solid #eee1c5;white-space:nowrap}th{background:#fff8e9;color:var(--wine)}.small-btn{border:0;border-radius:9px;padding:7px 10px;background:#8f1826;color:#fff}.small-btn.gold{background:var(--gold)}.admin-note{margin-top:18px;padding:14px;border-radius:13px;background:#fff8e9;border-left:4px solid var(--gold);font-size:.88rem}.modal{position:fixed;inset:0;z-index:2000;background:rgba(25,3,7,.65);display:none;place-items:center;padding:20px}.modal.show{display:grid}.modal-box{width:min(600px,100%);background:#fffdf8;border-radius:24px;padding:28px;max-height:90vh;overflow:auto}.gallery-preview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.gallery-item{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:#eee}.gallery-item img{width:100%;height:100%;object-fit:cover}.gallery-item button{position:absolute;right:5px;top:5px;border:0;border-radius:50%;background:#8f1826;color:#fff;width:28px;height:28px}footer{background:#35060d;color:#fff;padding:40px 0;text-align:center;border-top:1px solid rgba(240,204,118,.3)}footer h3{font-family:"Tiro Bangla";color:var(--lgold);margin:0}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.hero-image{min-height:330px}.cards,.contact-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.nav-links{display:none;position:absolute;top:68px;left:4%;right:4%;background:rgba(93,13,24,.98);padding:10px;border-radius:18px;flex-direction:column}.nav-links.open{display:flex}.nav-links a{text-align:center}.menu-btn{display:block}}
 @media(max-width:600px){.section{padding:65px 0}.hero-grid{gap:10px}.hero-image{min-height:280px}.cards,.contact-grid,.form-grid,.stats{grid-template-columns:1fr}.field.full{grid-column:auto}.schedule-item{grid-template-columns:1fr;gap:3px}.form-wrap{padding:20px}.greeting-card{padding:23px 17px}.gallery-preview{grid-template-columns:repeat(2,1fr)}.hero{background-position:center}}
+
+/* ===== NEW BENGALI SHARADIYA INTRO THEME ===== */
+#sharadiyaIntro{position:fixed;inset:0;z-index:10000;overflow:hidden;display:grid;place-items:center;text-align:center;color:#4a2b16;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.82),transparent 28%),linear-gradient(180deg,#f8e8c2,#ead0a0 70%,#d7b47b);transition:opacity 1s ease,visibility 1s ease}
+#sharadiyaIntro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.intro-mandala{position:absolute;width:min(82vw,760px);aspect-ratio:1;border:2px solid rgba(141,91,27,.25);border-radius:50%;animation:mandalaSpin 30s linear infinite}
+.intro-mandala:before,.intro-mandala:after{content:"";position:absolute;border:1px dashed rgba(141,91,27,.28);border-radius:50%;inset:7%;}
+.intro-mandala:after{inset:18%;transform:rotate(45deg);box-shadow:0 0 0 20px rgba(255,255,255,.12)}
+.intro-top{position:absolute;top:-8px;left:0;right:0;height:95px;background:repeating-radial-gradient(ellipse at top,rgba(141,91,27,.28) 0 2px,transparent 3px 22px);opacity:.55}
+.intro-kash{position:absolute;bottom:-15px;width:30vw;max-width:310px;height:46vh;opacity:.55}
+.intro-kash.left{left:-35px;transform:rotate(-7deg)}.intro-kash.right{right:-35px;transform:scaleX(-1) rotate(-7deg)}
+.intro-kash:before,.intro-kash:after{content:"";position:absolute;bottom:0;width:7px;height:100%;background:linear-gradient(90deg,transparent,#b78b55,transparent);border-radius:50%;transform-origin:bottom;box-shadow:20px -15px 0 -2px #c9a873,42px -50px 0 -2px #c9a873,65px -5px 0 -2px #c9a873,90px -70px 0 -2px #c9a873,115px -20px 0 -2px #c9a873}
+.intro-kash:before{left:20%;transform:rotate(-8deg)}.intro-kash:after{left:48%;height:90%;transform:rotate(9deg)}
+.intro-center{position:relative;z-index:5;padding:22px;max-width:900px}
+.intro-diya{font-size:42px;filter:drop-shadow(0 5px 10px rgba(110,65,20,.25));animation:diyaGlow 1.7s ease-in-out infinite}
+.intro-eye{font-size:48px;line-height:1;color:#9a6723;opacity:.18;margin-top:2px;letter-spacing:8px}
+.intro-college{font-weight:800;font-size:clamp(1.1rem,3vw,1.55rem);letter-spacing:.02em;opacity:0;animation:introUp .8s .2s forwards}
+.intro-dept{font-family:"Tiro Bangla",serif;font-size:clamp(1rem,2.5vw,1.35rem);margin-top:2px;opacity:0;animation:introUp .8s .45s forwards}
+.intro-title{font-family:"Tiro Bangla",serif;font-size:clamp(3rem,9vw,6.5rem);line-height:1;margin:15px 0 5px;color:#7b3e16;text-shadow:0 3px 0 rgba(255,255,255,.55);opacity:0;animation:titleIn 1.15s .65s forwards}
+.intro-sub{font-family:"Tiro Bangla",serif;font-size:clamp(1.4rem,4vw,2.35rem);color:#9b641f;opacity:0;animation:introUp .9s 1s forwards}
+.intro-rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:17px auto;width:min(430px,85vw);opacity:0;animation:introUp .8s 1.2s forwards}.intro-rule i{width:70px;height:1px;background:#a97832}.intro-rule b{font-size:20px;color:#b27a2d}
+.intro-btn{margin-top:18px;padding:11px 26px;border:1px solid #a66f28;border-radius:999px;background:rgba(255,250,235,.72);color:#6b3a15;font-family:"Noto Sans Bengali",sans-serif;font-weight:800;box-shadow:0 10px 30px rgba(96,55,17,.13);opacity:0;animation:introUp .8s 1.35s forwards;transition:.25s}.intro-btn:hover{transform:translateY(-3px);background:#fff9e9}
+.intro-diya-row{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:25px;font-size:30px;z-index:4;filter:drop-shadow(0 3px 8px rgba(80,40,10,.22))}
+.intro-flower{position:absolute;top:-30px;font-size:18px;color:#fff;animation:flowerFall linear infinite;opacity:.8}
+@keyframes introUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes titleIn{from{opacity:0;transform:translateY(22px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes diyaGlow{50%{transform:scale(1.08);filter:drop-shadow(0 0 18px #d99b37)}}
+@keyframes mandalaSpin{to{transform:rotate(360deg)}}
+@keyframes flowerFall{to{transform:translate3d(var(--drift),110vh,0) rotate(360deg)}}
+@media(max-width:600px){.intro-kash{width:40vw;height:35vh;opacity:.38}.intro-mandala{width:105vw}.intro-diya-row{font-size:24px;gap:15px}.intro-title{font-size:3.4rem}}
+
 </style>
 </head>
 <body>
+<div id="sharadiyaIntro">
+  <div class="intro-top"></div>
+  <div class="intro-mandala"></div>
+  <div class="intro-kash left"></div><div class="intro-kash right"></div>
+  <div class="intro-center">
+    <div class="intro-diya">🪔</div>
+    <div class="intro-eye">༺ ◉ ◉ ༻</div>
+    <div class="intro-college">উলুবেড়িয়া কলেজ</div>
+    <div class="intro-dept">রাষ্ট্রবিজ্ঞান বিভাগ</div>
+    <div class="intro-title">শুভ শারদীয়া ২০২৬</div>
+    <div class="intro-sub">সাংস্কৃতিক অনুষ্ঠান</div>
+    <div class="intro-rule"><i></i><b>❈</b><i></i></div>
+    <button class="intro-btn" id="introEnter" type="button">প্রবেশ করুন</button>
+  </div>
+  <div class="intro-diya-row"><span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span></div>
+</div>
+
 <div id="loader"><div class="loader-inner"><div class="loader-mark">শা</div><h2>শুভ শারদীয়া ২০২৬</h2><p>উলুবেড়িয়া কলেজ</p></div></div>
 <header class="nav" id="publicNav"><div class="container nav-inner"><a class="brand" href="#home">শুভ শারদীয়া ২০২৬<small>উলুবেড়িয়া কলেজ • রাষ্ট্রবিজ্ঞান বিভাগ</small></a><button class="menu-btn" id="menuBtn">☰</button><nav class="nav-links" id="navLinks"><a href="#home">হোম</a><a href="#festival">উৎসব</a><a href="#schedule">অনুষ্ঠান</a><a href="#registration">রেজিস্ট্রেশন</a><a href="#venue">স্থান ও সময়</a><a href="#contact">যোগাযোগ</a><a href="#" id="adminLink">অ্যাডমিন</a></nav></div></header>
 <main id="publicView">
@@ -79,6 +126,19 @@ $("csvBtn").onclick=()=>{let rows=[["নাম","রোল","বিভাগ","�
 $("printBtn").onclick=()=>window.print();
 renderSchedule();
 setTimeout(()=>$("loader").classList.add("loader-hide"),900);
+</script>
+
+<script>
+(function(){
+ const intro=document.getElementById('sharadiyaIntro');
+ const btn=document.getElementById('introEnter');
+ if(!intro)return;
+ const flowers=['✿','❀','✽','✾','❁'];
+ for(let n=0;n<24;n++){const f=document.createElement('span');f.className='intro-flower';f.textContent=flowers[n%flowers.length];f.style.left=(Math.random()*100)+'%';f.style.setProperty('--drift',((Math.random()*180)-90)+'px');f.style.animationDuration=(6+Math.random()*7)+'s';f.style.animationDelay=(-Math.random()*9)+'s';intro.appendChild(f)}
+ function closeIntro(){intro.classList.add('hide')}
+ btn.addEventListener('click',closeIntro);
+ setTimeout(closeIntro,6000);
+})();
 </script>
 </body>
 </html>
